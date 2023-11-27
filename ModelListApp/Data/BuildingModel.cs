@@ -55,6 +55,7 @@ namespace ModelListApp.Data
         public BuildingModel()
         {
             this.Type = Constants.Enums.Types.Building;
+            this.FloorCount = 0;
         }
 
     }

@@ -43,6 +43,7 @@ namespace ModelListApp.Data
         public ParcelModel()
         {
             this.Type = Constants.Enums.Types.Parcel;
+            this.Number = null;
         }
     }
 }

@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.34301.259
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelListApp", "ModelListApp\ModelListApp.csproj", "{DB4A39C7-BA53-4821-BB12-097C65F5CFC8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{445688AF-87A5-482F-B243-4CA8C7E085FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelListApp.Data.Test", "ModelListApp.Data.Test\ModelListApp.Data.Test.csproj", "{62740F7B-3FF1-42EA-8A64-D9B32FDBF195}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{DB4A39C7-BA53-4821-BB12-097C65F5CFC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB4A39C7-BA53-4821-BB12-097C65F5CFC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB4A39C7-BA53-4821-BB12-097C65F5CFC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62740F7B-3FF1-42EA-8A64-D9B32FDBF195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62740F7B-3FF1-42EA-8A64-D9B32FDBF195}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62740F7B-3FF1-42EA-8A64-D9B32FDBF195}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62740F7B-3FF1-42EA-8A64-D9B32FDBF195}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{62740F7B-3FF1-42EA-8A64-D9B32FDBF195} = {445688AF-87A5-482F-B243-4CA8C7E085FA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FE3312C4-F24D-4BAE-A466-E85351163D30}
