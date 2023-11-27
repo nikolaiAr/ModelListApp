@@ -121,22 +121,7 @@ namespace ModelListApp.ViewModel
             Items.Add(newItem);
             SelectedItem = newItem;
 
-            var context = new ValidationContext(newItem);
-            var results = new List<ValidationResult>();
-
-            if (!Validator.TryValidateObject(newItem, context, results, true))
-            {
-                foreach (var error in results)
-                {
-                    Model.ListErrors.Add(new Error()
-                    {
-                        ModelId = newItem.Id,
-                        FieldName = error.MemberNames.FirstOrDefault(),
-                        Description = error.ErrorMessage
-                    });
-                }
-                
-            }
+            newItem.ValidatePropChanged();
         }
 
         /// <summary>
